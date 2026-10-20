@@ -1,0 +1,11 @@
+target/
+*.class
+.project
+.classpath
+.settings/
+.idea/
+*.iml
+.vscode/
+# Keep sample DB if needed, but ignore temporary files
+data/*.db-journal
+exports/*.tmp

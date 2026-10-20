@@ -1,0 +1,18 @@
+========================================
+          == MOVIE TICKET ==
+========================================
+ID: BK101
+Movie: Oppenheimer
+Theater: PVR Grand Cinema
+Time: 01:00 PM
+Seats: E4, E5
+Amount: Rs 600
+Status: CONFIRMED
+----------------------------------------
+Customer: Priya
+Category: Regular
+Date Booked: 2026-10-13 10:39:14
+========================================
+ [||||||||||||||||||||||||||||||||||||] 
+    Enjoy your show at CinePass Cinemas! 
+========================================

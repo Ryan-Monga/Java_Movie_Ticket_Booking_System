@@ -1,0 +1,337 @@
+/* ==========================================================================
+   CINEPASS CINEMAS - MODERN CINEMATIC THEME (JavaFX CSS)
+   Color Palette: Deep Obsidian (#0B0F17, #131B2E), Gold Accent (#F59E0B, #FBBF24),
+   Crimson Alert (#EF4444), Emerald Available (#10B981), Crisp Slate/White (#F8FAFC)
+   ========================================================================== */
+
+.root {
+    -fx-font-family: 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+    -fx-background-color: #0b0f17;
+    -fx-text-fill: #f8fafc;
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: #131b2e;
+}
+.scroll-bar .thumb {
+    -fx-background-color: #273553;
+    -fx-background-radius: 4px;
+}
+.scroll-bar .thumb:hover {
+    -fx-background-color: #f59e0b;
+}
+
+/* Top Navigation Bar */
+.nav-bar {
+    -fx-background-color: #111827;
+    -fx-border-color: #1f293d;
+    -fx-border-width: 0 0 1px 0;
+    -fx-padding: 12px 24px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.brand-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #f59e0b;
+    -fx-letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #94a3b8;
+    -fx-letter-spacing: 1.5px;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.nav-button:hover {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #f59e0b;
+}
+.nav-button-active {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #f59e0b;
+    -fx-border-color: #f59e0b;
+    -fx-border-width: 0 0 2px 0;
+}
+
+/* Action Buttons */
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #f59e0b, #d97706);
+    -fx-text-fill: #0b0f17;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.35), 8, 0, 0, 2);
+}
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #fbbf24, #f59e0b);
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.6), 12, 0, 0, 3);
+}
+
+.btn-secondary {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-border-color: #334155;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+.btn-secondary:hover {
+    -fx-background-color: #334155;
+    -fx-border-color: #64748b;
+}
+
+.btn-danger {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.btn-danger:hover {
+    -fx-background-color: #ef4444;
+}
+
+/* Movie Card */
+.movie-card {
+    -fx-background-color: #131b2e;
+    -fx-background-radius: 12px;
+    -fx-border-color: #202b42;
+    -fx-border-radius: 12px;
+    -fx-border-width: 1px;
+    -fx-padding: 14px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 4);
+}
+.movie-card:hover {
+    -fx-background-color: #182238;
+    -fx-border-color: #f59e0b;
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.25), 14, 0, 0, 6);
+}
+
+.card-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #ffffff;
+}
+
+.card-genre {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #94a3b8;
+}
+
+.rating-badge {
+    -fx-background-color: #f59e0b;
+    -fx-text-fill: #0b0f17;
+    -fx-font-size: 11px;
+    -fx-font-weight: 800;
+    -fx-padding: 3px 7px;
+    -fx-background-radius: 4px;
+}
+
+.duration-badge {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-padding: 3px 7px;
+    -fx-background-radius: 4px;
+}
+
+/* Screen Curve Indicator */
+.cinema-screen-indicator {
+    -fx-background-color: linear-gradient(to bottom, #38bdf8, transparent);
+    -fx-border-color: #38bdf8;
+    -fx-border-width: 4px 0 0 0;
+    -fx-effect: dropshadow(gaussian, rgba(56, 189, 248, 0.7), 16, 0, 0, 4);
+    -fx-padding: 12px;
+    -fx-alignment: CENTER;
+}
+
+.screen-text {
+    -fx-font-size: 11px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #7dd3fc;
+    -fx-letter-spacing: 3px;
+}
+
+/* Seating Grid Buttons */
+.seat-button {
+    -fx-min-width: 42px;
+    -fx-min-height: 38px;
+    -fx-max-width: 42px;
+    -fx-max-height: 38px;
+    -fx-background-radius: 6px;
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-cursor: hand;
+}
+
+.seat-available {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #94a3b8;
+    -fx-border-color: #334155;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+}
+.seat-available:hover {
+    -fx-background-color: #334155;
+    -fx-text-fill: #38bdf8;
+    -fx-border-color: #38bdf8;
+}
+
+.seat-selected {
+    -fx-background-color: #f59e0b;
+    -fx-text-fill: #0b0f17;
+    -fx-border-color: #fbbf24;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.8), 8, 0, 0, 1);
+}
+
+.seat-booked {
+    -fx-background-color: #3b1115;
+    -fx-text-fill: #7f1d1d;
+    -fx-border-color: #551b22;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+    -fx-opacity: 0.65;
+    -fx-cursor: not-allowed;
+}
+
+/* Sidebar Summary Card */
+.sidebar-panel {
+    -fx-background-color: #111827;
+    -fx-background-radius: 12px;
+    -fx-border-color: #1f293d;
+    -fx-border-radius: 12px;
+    -fx-border-width: 1px;
+    -fx-padding: 20px;
+}
+
+.total-amount-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #f59e0b;
+}
+
+/* Form Controls */
+.text-field, .text-area {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #64748b;
+    -fx-border-color: #334155;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 9px 12px;
+    -fx-font-size: 13px;
+}
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #f59e0b;
+    -fx-background-color: #1a2333;
+}
+
+.combo-box {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #334155;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 4px;
+    -fx-cursor: hand;
+}
+.combo-box .list-cell {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 13px;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: #1e293b;
+    -fx-border-color: #334155;
+}
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #f59e0b;
+    -fx-text-fill: #0b0f17;
+}
+
+/* TableView */
+.table-view {
+    -fx-background-color: #111827;
+    -fx-border-color: #1f293d;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+.table-view .column-header-background {
+    -fx-background-color: #182238;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: 700;
+    -fx-text-fill: #f59e0b;
+    -fx-font-size: 12px;
+    -fx-padding: 10px;
+}
+.table-view .table-row-cell {
+    -fx-background-color: #111827;
+    -fx-border-color: #1a2233;
+    -fx-border-width: 0 0 1px 0;
+    -fx-text-fill: #f8fafc;
+    -fx-padding: 4px;
+}
+.table-view .table-row-cell:odd {
+    -fx-background-color: #0e1422;
+}
+.table-view .table-row-cell:hover {
+    -fx-background-color: #1f293d;
+}
+.table-view .table-row-cell:selected {
+    -fx-background-color: #273553;
+}
+
+/* Terminal Console for Concurrency Demo */
+.terminal-box {
+    -fx-background-color: #06090e;
+    -fx-border-color: #1e293b;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 16px;
+    -fx-font-family: 'Consolas', 'Courier New', monospace;
+    -fx-font-size: 12px;
+    -fx-text-fill: #10b981;
+}
+
+/* Cinema Ticket Stub Preview */
+.ticket-stub {
+    -fx-background-color: linear-gradient(to bottom right, #1a2333, #111827);
+    -fx-border-color: #f59e0b;
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 24px;
+    -fx-effect: dropshadow(gaussian, rgba(245, 158, 11, 0.35), 18, 0, 0, 4);
+}
